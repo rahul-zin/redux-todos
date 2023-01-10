@@ -1,0 +1,35 @@
+.todo_container{
+    /* background-color: aquamarine; */
+    height: 100vh;
+    position: relative;
+    padding: 1rem !important;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f8f8;
+}
+
+main{
+    flex: 1;
+    height: calc(100vh - 6rem);
+    /* height: 100%; */
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo_list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    max-height: 98%;
+    overflow-y: auto;
+}
+
+.add_todo__btn{
+    /* position: absolute !important; */
+    bottom: 2rem;
+    right: 2rem;
+}

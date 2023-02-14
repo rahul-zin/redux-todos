@@ -1,9 +1,16 @@
-import TodoLayout from "./layouts/TodoLayout"
-import AddTodoDialog from "./views/AddTodoDialog/AddTodoDialog"
-import TodoCard from "./views/TodoCard/TodoCard"
+import { Container} from "@mui/material";
+import React from "react";
+import "./index.css";
+import TodoList from "./components/TodoList/TodoList";
+import TodoFooter from "./components/TodoFooter/TodoFooter";
 
-export {
-    TodoLayout,
-    AddTodoDialog,
-    TodoCard
+export default function TodoApp() {
+    return (
+        <Container maxWidth="md" className="todo_container">
+            <main>
+                <TodoList />
+            </main>
+            <TodoFooter />
+        </Container>
+    );
 }
